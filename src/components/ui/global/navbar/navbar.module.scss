@@ -1,19 +1,21 @@
 @import "../../../../sass/global";
 
 .navbar {
-    width: 100vw;
+    width: 99vw;
     height: 5rem;
     padding: 0.2rem;
     position: fixed;
     top: 1%;
     z-index: 50;
     @include flex(space-between, center);
+    // background: #000;
 
     .side {
-        width: 70%;
+        width: 68%;
         height: 100%;
         padding: 0.4rem 1.5rem;
         position: relative;
+        margin-left: 1%;
         img {
             position: absolute;
             inset: 0;

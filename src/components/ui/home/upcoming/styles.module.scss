@@ -1,0 +1,23 @@
+@import "../../../../sass/global";
+
+.upcoming {
+    @include fullScreen();
+    display: grid;
+    place-items: end;
+
+    .child {
+        @include screenRatio($h: 90%);
+        padding: 1rem;
+
+        h1 {
+            font-weight: 900;
+            font-size: 3rem;
+            letter-spacing: -1px;
+        }
+
+        .cards {
+            margin-top: 2.5%;
+            @include flex(flex-start);
+        }
+    }
+}

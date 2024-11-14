@@ -8,7 +8,7 @@ function Card() {
             <img src={`https://picsum.photos/600`} alt="site picture" />
         </div>
         <div className={styles.content}>
-            <h1>Title of the property</h1>
+            <h1 className={styles.title}>Title of the property</h1>
             {/* 75 characters */}
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, deleniti...</p>
         
