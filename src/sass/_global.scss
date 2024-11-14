@@ -1,0 +1,66 @@
+// imports
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// mixins 
+
+@mixin flex($jc: center, $ai: center, $fd: row, $wrap: wrap) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    flex-wrap: $wrap;
+}
+
+@mixin screenRatio($w: 100%, $h: 100%) {
+    width: $w;
+    height: $h;
+}
+
+@mixin fullScreen($w: 100vw, $h: 100vh) {
+    width: $w;
+    height: $h;
+}
+
+@mixin absolute($w: 100%, $h: 100%, $top: 0, $left: 0, $right: 0, $bottom: 0) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+    width: $w;
+    height: $h;
+}
+
+// base varients -
+$primary: #036755;
+$gold: #D8AE5E;
+$white: #F4F4F4;
+$black: #1A1A1A;
+
+@mixin tealGr($p1: 0%, $p2: 90%) {
+    background: linear-gradient(165deg, #043936 $p1, #0B9F97 $p2);
+}
+@mixin tealText() {
+    @include tealGr();
+    background-clip: text;
+    color: transparent;
+}
+
+
+@mixin goldGr($p1: 0%, $p2: 90%) {
+    background: linear-gradient(165deg, #BA9142 $p1, #FFCE72 $p2);
+}
+@mixin goldText() {
+    @include goldGr();
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+.dm-sans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
